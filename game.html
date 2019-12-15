@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Game</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+
+<body>
+	<div id="menu">
+		<ul>
+			<li style="float: left;"><p id="navTitle">JCCSS X World Vision - No Child For Sale</p><li>
+			<li><a href="https://www.worldvision.ca/no-child-for-sale/home" target="_blank">Support The Cause</a></li>
+			<li><a class="active" href="game.html">Game</a></li>
+			<li><a href="index.html">About</a></li>
+		</ul>
+	</div>
+	<div id="gameDiv">
+		<div id="childDiv">
+			<div class="childDisplay">
+				<h1 class="childName">Jin</h1>
+				<p class="statTitle">Age:</p>
+				<p class="stat" id="c1A">a</p>
+				<p class="statTitle">Average in School:</p>
+				<p class="stat" id="c1E">e</p>
+				<p class="statTitle">Days Worked a Week:</p>
+				<select class="stat" id="c1DW" onchange="checkSchedule(0)">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				<select>
+				<p class="statTitle">Days at School a Week:</p>
+				<select class="stat" id="c1DS" onchange="checkSchedule(1)">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				<select>
+			</div>
+			<div class="childDisplay">
+				<h1 class="childName">Liling</h1>
+				<p class="statTitle">Age:</p>
+				<p class="stat" id="c2A">a</p>
+				<p class="statTitle">Average in School:</p>
+				<p class="stat" id="c2E">e</p>
+				<p class="statTitle">Days Worked a Week:</p>
+				<select class="stat" id="c2DW" onchange="checkSchedule(0)">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				<select>
+				<p class="statTitle">Days at School a Week:</p>
+				<select class="stat" id="c2DS" onchange="checkSchedule(1)">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				<select>
+			</div>
+		</div>
+		<div id="outputDiv">
+			<p id="earnings">Monthly Earnings: $0.00</p>
+			<p id="year">Year: 0</p>
+			<p id="outText">Hello! Welcome to the Game!</p>
+			<button onClick="nextText()" id="submit">Continue</button>
+		</div>
+	</div>
+	<script src="game.js"></script>
+
+</body>
+	
+</html>
